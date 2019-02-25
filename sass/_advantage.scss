@@ -1,0 +1,181 @@
+.advantage{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 140px;
+  // margin-bottom: 150px;
+  &-circle{
+    position: absolute;
+    left:-250px;
+    bottom: 0;
+  }
+  &-girl {
+    width: 300px;
+    // position: absolute;
+    display: flex;
+    justify-content: center;
+    // outline: 1px solid green;
+    margin: 0 auto;
+   
+  }
+  h2{
+    font-family: Geometria-ExtraBold;
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #30163d;
+  }
+  &-block{
+    
+    &-description{
+      width: 450px;
+      text-align: center;
+      margin: 20px auto;
+      font-family: Geometria-Medium;
+      font-size: 1.125rem;
+      color: #111;
+    }
+    &-wrap{
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+      &-item{
+        width: 420px;
+        // height: 200px;
+        // outline: 1px solid;
+        .squre{
+          position: relative;
+          width: 55px;
+          height: 55px;
+          padding: 10px;
+          margin:0 auto;
+          transform: rotate(45deg);
+          box-shadow: 0px 0px 9px 0px #eb2860;
+          background-color: #eb2860;
+          span{
+            display: block;
+            position: absolute;
+            top:-60px;
+            right: -135px;
+            width: 150px;
+            border: 1px solid #eb2860;
+            transform: rotate(-45deg);
+            box-shadow: 0px 0px 9px 0px #eb2860;
+              &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top:13px;
+                right: -46px;
+                width: 50px;
+                height: 2px;
+                 background: rgba(235, 40, 95, 1);
+                background: linear-gradient(45deg, rgba(235, 40, 95, 1) 0%, rgba(235, 40, 95, 1) 68%, rgba(248, 215, 3, 1) 91%, rgba(248, 215, 3, 1) 100%);
+                transform: rotate(35deg);
+              }
+          }
+        }
+        img{
+          transform: rotate(-45deg);
+        }
+        .squre{
+          font-family: Geometria-Medium;
+          &-headline {
+            margin-top: 12px;
+            
+            font-size: 1.5rem;
+            text-transform: uppercase;
+          }
+          &-text{
+            padding-top: 15px;
+            font-size: 1.125rem;
+            color: #111111;
+            text-align: center;
+          }
+        }
+        &:nth-child(2){
+          span {
+            display: block;
+            position: absolute;
+            top: 114px;
+            left: -134px;
+            width: 150px;
+            border: 1px solid #eb2860;
+            transform: rotate(-45deg);
+            box-shadow: 0px 0px 9px 0px #eb2860;
+
+            // box-shadow: 16px 0px 29px -12px #fff;
+            &::before{
+              display: none;
+            }
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 14px;
+              left: -46px;
+              width: 50px;
+              height: 2px;
+              //  border: 1px solid #eb2860;
+              background: rgba(235, 40, 95, 1);
+              background: linear-gradient(45deg, rgba(235, 40, 95, 1) 0%, rgba(235, 40, 95, 1) 68%, rgba(248, 215, 3, 1) 91%, rgba(248, 215, 3, 1) 100%);
+              //  box-shadow: 16px 0px 29px -12px #fff;
+              //  box-shadow: 0px 0px 9px 0px #000;
+              transform: rotate(140deg);
+            }
+          }
+        }
+        .child-3{
+          span{
+           
+            &::after{
+              // top:150px;
+              display: none;
+              
+            }
+             &::before {
+               display: none;
+             }
+             
+          }
+        }
+        &:nth-child(3) {
+           span {
+             display: none;
+
+             &::before {
+               display: none;
+             }
+           }
+
+         }
+        &:nth-child(4) {
+          span {
+            display: none;
+            &::before {
+              display: none;
+            }
+          }
+
+        }
+      }
+      &:nth-child(3){
+        bottom: 100px;   
+        span{
+          &::before{
+            // display: none;
+          }
+          
+        }
+      }
+      
+    }
+  }
+  .pink-bubble {
+    position: absolute;
+    top:-90px;
+    right: 5%;
+  }
+}

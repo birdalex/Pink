@@ -1,0 +1,19 @@
+@import "resetCss";
+@import "fonts";
+@import "upperBlock";
+@import "galery";
+@import "advantage";
+@import "order";
+body{
+  min-width: 320px;
+  // max-width: 1400px;
+  // height: 100%;
+  font-size: 1rem;
+  background-color: #f8d603;
+  font-family: Geometria;
+  // overflow: hidden;
+  // overflow-y: visible;
+  z-index: 55;
+  position: relative;
+}
+@import"media";
