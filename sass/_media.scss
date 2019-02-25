@@ -149,25 +149,41 @@
       }
     }
   }
-  
+  .order{
+    .order-girl{
+      z-index: -1;
+    }
+  }
 }
-@media(max-width:1025px){
-  // .order-row {
-  //   &_girl {
-  //     overflow: visible;
-  //     width: 200px;
-  //     height: 350px;
-  //     &_circle{
-  //       width: 250px;
-  //       height: 250px;
-  //       margin-left: -125px;
-  //     }
-  //     img{
-  //       top:-60px;
-  //       margin-left: -100px;
-  //     }
-  //   }
-  // }
+@media(max-width:1305px){
+  .order-row{
+    justify-content: space-around;
+  }
+    .order-row-item{
+      height: 100%;
+      margin-bottom: 20px;
+    }
+    .order-row-changeColor{
+      margin-top: 450px;
+    }
+    .order-girl{
+      position: relative;
+      overflow: visible;
+      margin-left: -100px;
+      z-index: -1;
+      width: 200px;
+      height: auto;
+      top:0;
+      &-circle{
+        width: 250px;
+        height: 250px;
+        margin-left: -125px;
+      }
+      img{
+        width: 200px;
+        margin-left: -100px;
+      }
+    }
 }
 @media(max-width:1196px) {
   .upperBlcok-timeSale_block {

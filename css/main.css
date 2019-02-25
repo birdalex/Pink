@@ -1063,7 +1063,6 @@ input[type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: 1px solid red;
 }
 
 .order-row_logo {
@@ -1143,6 +1142,32 @@ input[type=button] {
 .order-timeSale_block .upperBlcok-timeSale-day-item,
 .order-timeSale_block .upperBlcok-timeSale-btn {
   text-align: center;
+}
+
+.order-timeSale_color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80px;
+}
+
+.order-timeSale_color span {
+  margin-top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.order-timeSale_color span:nth-child(2) {
+  background-color: red;
 }
 
 body {
@@ -1297,6 +1322,41 @@ body {
   .advantage-girl img {
     width: 300px;
     height: auto;
+  }
+  .order .order-girl {
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1305px) {
+  .order-row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .order-row-item {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .order-row-changeColor {
+    margin-top: 450px;
+  }
+  .order-girl {
+    position: relative;
+    overflow: visible;
+    margin-left: -100px;
+    z-index: -1;
+    width: 200px;
+    height: auto;
+    top: 0;
+  }
+  .order-girl-circle {
+    width: 250px;
+    height: 250px;
+    margin-left: -125px;
+  }
+  .order-girl img {
+    width: 200px;
+    margin-left: -100px;
   }
 }
 

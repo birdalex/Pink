@@ -112,17 +112,27 @@ $(document).ready(function (){
   }
   function initializeClock( endtime) {
     // var clock = document.getElementById(id);
-    var daysSpan = document.querySelector('.upperBlcok-timeSale-timetable-day'),
-      hoursSpan = document.querySelector('.upperBlcok-timeSale-timetable-hours'),
-      minutesSpan = document.querySelector('.upperBlcok-timeSale-timetable-minutes');
+    var daysSpan = document.querySelectorAll('.upperBlcok-timeSale-timetable-day'),
+      hoursSpan = document.querySelectorAll('.upperBlcok-timeSale-timetable-hours'),
+      minutesSpan = document.querySelectorAll('.upperBlcok-timeSale-timetable-minutes');
     //  secondsSpan = clock.querySelector('.seconds');
-
+    // var daysSpan=document.getElementById('day'),
+    //     hoursSpan = document.getElementById('hours'),
+    //     minutesSpan=document.getElementById('minutes');
     function updateClock() {
       var t = getTimeRemaining(endtime);
-
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      for(let i=0;i<daysSpan.length;i++){
+        daysSpan[i].innerHTML = t.days;
+      }
+      for (let i = 0; i < hoursSpan.length; i++) {
+        hoursSpan[i].innerHTML = ('0' + t.hours).slice(-2);
+      }
+      for (let i = 0; i < minutesSpan.length; i++) {
+        minutesSpan[i].innerHTML = ('0' + t.minutes).slice(-2);
+      }
+      // daysSpan.innerHTML = t.days;
+      // hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      // minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
 
       if (t.total <= 0) {
         clearInterval(timeinterval);
