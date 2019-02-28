@@ -1051,7 +1051,9 @@ input[type=button] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px auto;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-row-item {
@@ -1080,13 +1082,31 @@ input[type=button] {
   margin-top: 15px;
   text-transform: uppercase;
   font-family: Geometria-Medium;
-  color: #444444;
+  color: #222;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .order-row-changeColor .changeColor-active {
-  color: #222222;
-  color: 30px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #D5136C;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-right: 20px;
+  position: absolute;
+  top: 40%;
+}
+
+.order-row-changeColor .color-block-text .text {
+  margin-left: 20px;
+}
+
+.order-row-changeColor .color-block-text {
+  position: relative;
 }
 
 .order-row .collection {
@@ -1100,7 +1120,19 @@ input[type=button] {
 }
 
 .order-row .specifications {
+  width: 200px;
+  position: relative;
   margin-top: 90px;
+}
+
+.order-row .specifications .triangle {
+  position: absolute;
+  top: 7px;
+  right: 50px;
+}
+
+.order-row .specifications-text {
+  display: none;
 }
 
 .order-girl {
@@ -1155,6 +1187,7 @@ input[type=button] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80px;
+  margin-bottom: 10px;
 }
 
 .order-timeSale_color span {
@@ -1168,6 +1201,129 @@ input[type=button] {
 
 .order-timeSale_color span:nth-child(2) {
   background-color: red;
+}
+
+.order .triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #222222;
+  cursor: pointer;
+}
+
+.order .tableSize {
+  color: #222222;
+  font-family: Geometria;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.order-currentColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order-currentColor .form-select {
+  position: relative;
+  margin-left: -30px;
+}
+
+.order-currentColor .form-select select {
+  width: 110%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: #E6E6E6;
+  padding-right: 10px;
+}
+
+.order-currentColor .form-select .triangle {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.order-input {
+  position: relative;
+  width: 300px;
+}
+
+.order-input label {
+  position: absolute;
+  top: 23px;
+  left: 10px;
+}
+
+.order-input label:nth-child(3) {
+  top: 85px;
+}
+
+.order-input input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #888888;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 10px 0;
+  padding-left: 35px;
+}
+
+.order-input input::-webkit-input-placeholder {
+  display: block;
+  color: #444444;
+}
+
+.order-input input:-ms-input-placeholder {
+  display: block;
+  color: #444444;
+}
+
+.order-input input::-ms-input-placeholder {
+  display: block;
+  color: #444444;
+}
+
+.order-input input::placeholder {
+  display: block;
+  color: #444444;
+}
+
+.order-input input::-webkit-input-placeholder::after {
+  content: "1";
+  display: block;
+  outline: 1px solid red;
+}
+
+.order-input input:-ms-input-placeholder::after {
+  content: "1";
+  display: block;
+  outline: 1px solid red;
+}
+
+.order-input input::-ms-input-placeholder::after {
+  content: "1";
+  display: block;
+  outline: 1px solid red;
+}
+
+.order-input input::placeholder::after {
+  content: "1";
+  display: block;
+  outline: 1px solid red;
 }
 
 body {

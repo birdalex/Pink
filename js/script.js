@@ -145,4 +145,37 @@ $(document).ready(function (){
  
   var deadline = '2019-02-20';// изменение даты
   initializeClock(deadline);
+
+  // section order
+  var count = 0;
+  // $('#triangle-1').on('click',function(){
+  //   var count=1;
+  //   $('.specifications-text').fadeIn();
+   
+  // });
+  // if (count == 1) {
+  //   $('#triangle-1').on('click', function () {
+  //     $('.specifications-text').fadeOut();
+  //   })
+  // }
+  function test(e){
+    $('#triangle-1').on('click', function (){
+      if(e==0){
+        $('.specifications-text').fadeIn();
+      }
+    })
+  }
+  
+  test(0);
+  $('#triangle-1').removeEventListener('click', test);
+  function test1(e) {
+    $('#triangle-1').on('click', function () {
+      if (e == 1) {
+        $('.specifications-text').fadeOut();
+      }
+    })
+  }
+  test1(1);
+  $('#triangle-1').removeEventListener('click', test1);
+  // $('#triangle-1').removeEvent
 });

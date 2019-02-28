@@ -203,17 +203,18 @@
               <img src="./img/girl-order1.png" alt="girl image">
             </div>
           <div class="order-row-changeColor">
-            <div class="colorGrey ">
-              <div class="colorGrey-active"></div>
-              <div class="colorGrey-text changeColor-active">PINK GREY</div>
+            <div class="color-block "> 
+            <div class="color-block-text ">
+              <div class="changeColor-active"></div>
+              <div class="text">PINK GREY</div> 
             </div>
-            <div class="colorPink">
-              <div class="colorPink-active"></div>
-              <div class="colorPink-text">pink black</div>
+            </div>
+            <div class="color-block">
+              <div class="color-block-text"><span></span> pink black</div>
             </div>
           </div>
           <div class="specifications">
-            Характеристики<span></span>
+            Характеристики<span id="triangle-1" class="triangle"></span>
                 <div class="specifications-text">
                   Пол: женский<br>
                   Сезон: осень-зима<br>
@@ -223,7 +224,7 @@
       </div>
       <!-- end row-item -->
      <div class="order-row-item">
-<div class="order-timeSale_block">
+          <div class="order-timeSale_block">
             <p>До окончания акции</p>
             <div class="upperBlcok-timeSale-timetable">
               <div id="day" class="upperBlcok-timeSale-timetable-day"><span></span>03</div>
@@ -241,6 +242,28 @@
             </div>
               <div class="order-timeSale_color">
                 Цвет <span></span><span></span>
+              </div>
+              <div class="order-currentColor">
+                Размер
+                <!-- <span class="triangle"></span>  -->
+                <form action="#">
+                  <div class="form-select">
+                      <select name="" id="">
+                        <option value="" selected>XL</option>
+                        <option value="">L</option>
+                        <option value="">M</option>
+                        <option value="">S</option>
+                      </select>
+                      <span class="triangle"></span> 
+                  </div>
+                </form>
+                <span class="tableSize">Таблица размеров</span>
+              </div>
+              <div class="order-input">
+                <label for="#"><img src="./img/user_(1).png" alt=""></label>
+                <input type="text" class="name" placeholder="Имя">
+                <label for="#" class=""><img src="./img/call-answer.png" alt=""></label>
+                <input type="tel" class="name" placeholder="Телефон">
               </div>
             <div class="upperBlcok-timeSale-btn"><a href="#">Заказать по скидке</a></div>
           </div>
