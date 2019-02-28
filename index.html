@@ -200,22 +200,26 @@
           <div class="collection">Коллекция<br>Зима 2018/19<br><span>Со скидкой 70%</span></div>
             <div class="order-girl">
               <div class="order-girl-circle"></div>
-              <img src="./img/girl-order1.png" alt="girl image">
+              <img id="imgGirl" src="./img/girl-order1.png" alt="girl image">
             </div>
           <div class="order-row-changeColor">
-            <div class="color-block "> 
-            <div class="color-block-text ">
-              <div class="changeColor-active"></div>
-              <div class="text">PINK GREY</div> 
-            </div>
-            </div>
-            <div class="color-block">
-              <div class="color-block-text"><span></span> pink black</div>
-            </div>
+              <div class="color-block "> 
+                <div class="color-block-text ">
+                  <div id="colorActive-0" class="changeColor-active"></div>
+                  <div id="black" class="text">PINK GREY</div> 
+                </div>
+              </div>
+              <div class="color-block">
+                <div class="color-block-text ">
+                  <div id="colorActive-1"></div>
+                  <div id="grey">pink black</div>
+                  </div>
+              </div>
           </div>
           <div class="specifications">
-            Характеристики<span id="triangle-1" class="triangle"></span>
-                <div class="specifications-text">
+            Характеристики<span id="triangle-1" class="triangle"></span> 
+            <span id="triangle-2"></span>
+                <div id="spec-text" class="specifications-text">
                   Пол: женский<br>
                   Сезон: осень-зима<br>
                   Ткань: трикотаж-трехнить с начёсом<br>
@@ -258,6 +262,11 @@
                   </div>
                 </form>
                 <span class="tableSize">Таблица размеров</span>
+                <div class="overlay">
+                  <div class="popup">
+                    <div class="popup-close"></div>
+                  </div>
+                </div>
               </div>
               <div class="order-input">
                 <label for="#"><img src="./img/user_(1).png" alt=""></label>

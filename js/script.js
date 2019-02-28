@@ -147,35 +147,31 @@ $(document).ready(function (){
   initializeClock(deadline);
 
   // section order
-  var count = 0;
-  // $('#triangle-1').on('click',function(){
-  //   var count=1;
-  //   $('.specifications-text').fadeIn();
-   
-  // });
-  // if (count == 1) {
-  //   $('#triangle-1').on('click', function () {
-  //     $('.specifications-text').fadeOut();
-  //   })
-  // }
-  function test(e){
-    $('#triangle-1').on('click', function (){
-      if(e==0){
-        $('.specifications-text').fadeIn();
-      }
-    })
-  }
   
-  test(0);
-  $('#triangle-1').removeEventListener('click', test);
-  function test1(e) {
-    $('#triangle-1').on('click', function () {
-      if (e == 1) {
-        $('.specifications-text').fadeOut();
-      }
-    })
-  }
-  test1(1);
-  $('#triangle-1').removeEventListener('click', test1);
-  // $('#triangle-1').removeEvent
+  $('#triangle-1').on('click', function () {
+     $(this).removeClass("triangle");
+    $('#triangle-2').addClass('triangle-active');
+    $('.specifications-text').slideDown();
+   })
+ 
+  $('#triangle-2').on('click', function () {
+       $(this).removeClass("triangle-active");
+    $('#triangle-1').addClass("triangle");
+    $('.specifications-text').slideUp();
+     })
+  let imgGirl = $('#imgGirl');
+    $("#black").on("click", function () {
+      $(this).addClass('text');
+      $('#grey').removeClass('text');
+      $('#colorActive-1').removeClass('changeColor-active');
+      $('#colorActive-0').addClass('changeColor-active');
+      imgGirl.attr("src", "./img/girl-order1.png");
+    });
+     $("#grey").on("click", function(){
+       $(this).addClass('text');
+       $('#black').removeClass('text');
+       $('#colorActive-1').addClass('changeColor-active');
+       $('#colorActive-0').removeClass('changeColor-active');
+       imgGirl.attr("src", "./img/girl-order2.png");
+     });
 });
