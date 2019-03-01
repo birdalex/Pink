@@ -170,19 +170,10 @@
          cursor: pointer;
       transform: rotate(180deg);
       transition: .3s;
-      // outline: 1px solid red;
+
     }
   }
-  //  .triangle-active {
-     
-  //    width: 0;
-  //    height: 0;
-  //    border-left: 5px solid transparent;
-  //    border-right: 5px solid transparent;
-  //    border-top: 10px solid #222222;
-  //    cursor: pointer;
-     
-  //  }
+  
   .tableSize{
     color: #222222;
     font-family: Geometria;
@@ -191,6 +182,43 @@
     line-height: 18px;
     text-decoration: underline;
     cursor: pointer;
+    &-block{
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      align-items: flex-end;
+      font-size: 1.5rem;
+      // border-top: 2px solid black;
+      .spec-size {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid black;
+        &-item{
+          padding: 10px;
+          &:nth-child(2){
+            border-top: 1px solid black;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .size{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-item {
+          padding: 10px;
+          color: grey;
+          &:nth-child(1){
+            color: black;
+            width: 150%;
+            text-align: center;
+             border-bottom: 1px solid black;
+          }
+        }
+      }
+    }
     
   }
   &-currentColor{

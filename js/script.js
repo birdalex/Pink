@@ -159,6 +159,7 @@ $(document).ready(function (){
     $('#triangle-1').addClass("triangle");
     $('.specifications-text').slideUp();
      })
+    //  Фото девушки
   let imgGirl = $('#imgGirl');
     $("#black").on("click", function () {
       $(this).addClass('text');
@@ -174,4 +175,19 @@ $(document).ready(function (){
        $('#colorActive-0').removeClass('changeColor-active');
        imgGirl.attr("src", "./img/girl-order2.png");
      });
+     
+    //  Таблица размеров
+  $(".tableSize").on("click",function(){
+    $(".overlay").css("display","block");
+  });
+  $(".popup-close").on("click", function(){
+    $(".overlay").css("display", "none");
+  });
+
+  // Скролл
+  $("body").on('click', '[href*="#"]', function (e) {
+    var fixed_offset = 100;
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+    e.preventDefault();
+  });
 });

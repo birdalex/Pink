@@ -398,7 +398,6 @@ input[type=button] {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   z-index: -1;
-  outline: 1px solid red;
 }
 
 .upperBlcok .circle {
@@ -814,8 +813,8 @@ input[type=button] {
 .galery-test {
   position: absolute;
   width: 100%;
-  height: 270px;
-  bottom: -810px;
+  height: 700px;
+  bottom: -840px;
   background-color: #eb2860;
   z-index: -1;
 }
@@ -1246,6 +1245,69 @@ input[type=button] {
   cursor: pointer;
 }
 
+.order .tableSize-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.5rem;
+}
+
+.order .tableSize-block .spec-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid black;
+}
+
+.order .tableSize-block .spec-size-item {
+  padding: 10px;
+}
+
+.order .tableSize-block .spec-size-item:nth-child(2) {
+  border-top: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+.order .tableSize-block .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order .tableSize-block .size-item {
+  padding: 10px;
+  color: grey;
+}
+
+.order .tableSize-block .size-item:nth-child(1) {
+  color: black;
+  width: 150%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
 .order-currentColor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1367,14 +1429,14 @@ body {
   width: 100%;
   height: 100%;
   z-index: 65;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .popup {
   position: absolute;
   left: 50%;
   top: 30%;
-  width: 320px;
+  width: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #fff;
@@ -1382,10 +1444,10 @@ body {
 
 .popup-close {
   position: absolute;
-  top: -30px;
-  right: -20px;
+  top: -5px;
+  right: 5px;
   font-size: 30px;
-  color: #fff;
+  color: grey;
   cursor: pointer;
 }
 
@@ -1404,6 +1466,9 @@ body {
     height: 1200px;
     top: -600px;
     left: -600px;
+  }
+  .upperBlcok .popup {
+    overflow-x: scroll;
   }
   .upperBlcok-timeSale {
     position: absolute;
@@ -1527,10 +1592,10 @@ body {
     margin-bottom: 40px;
   }
   .advantage-girl {
-    width: 200px;
+    width: 160px;
+    height: 290px;
   }
   .advantage-girl img {
-    width: 300px;
     height: auto;
   }
   .order .order-girl {

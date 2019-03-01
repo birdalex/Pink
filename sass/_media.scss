@@ -16,6 +16,9 @@
          left:-600px;
        }
      }
+     .popup{
+       overflow-x: scroll;
+     }
     &-timeSale{
       position: absolute;
       top:150px;
@@ -142,9 +145,10 @@
       }
     }
     &-girl{
-      width: 200px;
+      width: 160px;
+      height: 290px;
       img{
-        width: 300px;
+        // width: 300px;
         height: auto;
       }
     }
